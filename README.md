@@ -1,6 +1,8 @@
 # CSC212Assignments
 Smith College / CSC212 / Assignment Starter Code
 
+The [CSC212Examples](https://github.com/jjfiv/CSC212Examples) repository has all my examples from class. This has the bare-bones minimum you need to start an assignment.
+
 ## How to import this project into Eclipse
 
 There are a lot of steps here! Don't try to memorize them. Whenever you click next, or open a menu, see if you can read it, guess what you should do next, and confirm with these steps. Doing it this way will help you get through it quicker for future assignments.
