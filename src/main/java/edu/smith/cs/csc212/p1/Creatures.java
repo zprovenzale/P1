@@ -78,4 +78,21 @@ public class Creatures {
 		drawFishFacingLeft(halfSize, color, 0, 0);
 		halfSize.dispose();
 	}
+	
+	/**
+	 * This method is implemented by creating a new Graphics "world" located at x,y
+	 * that is half the size of a regular one and calling our regular Fish method.
+	 * 
+	 * @param g the original graphics world.
+	 * @param color the color of the fish!
+	 * @param x the x-coordinate of the position to draw the fish.
+	 * @param y the y-coordinate of the position to draw the fish.
+	 */
+	public static void drawSmallFishFacingRight(Graphics2D g, Color color, int x, int y) {
+		Graphics2D halfSize = (Graphics2D) g.create();
+		halfSize.translate(x, y);
+		halfSize.scale(-0.5, 0.5);
+		drawFishFacingLeft(halfSize, color, 0, 0);
+		halfSize.dispose();
+	}
 }
