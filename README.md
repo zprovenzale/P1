@@ -11,7 +11,7 @@ There are a lot of steps here! Don't try to memorize them. Whenever you click ne
 2. Expand the Git Folder and choose "Projects from Git"
 3. Click "Next"
 4. Choose "Clone URI"
-5. Copy and paste [https://github.com/jjfiv/CSC212Examples.git](https://github.com/jjfiv/CSC212Examples.git) into the URI field.
+5. Copy and paste [https://github.com/jjfiv/CSC212Assignments.git](https://github.com/jjfiv/CSC212Assignments.git) into the URI field.
 6. Click "Next"
 7. Wait for it to find "master"
 8. Click "Next"
