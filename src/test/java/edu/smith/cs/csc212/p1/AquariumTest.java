@@ -1,5 +1,7 @@
 package edu.smith.cs.csc212.p1;
 
+import java.awt.GraphicsEnvironment;
+
 import org.junit.Test;
 
 import me.jjfoley.gfx.GFX;
@@ -15,7 +17,9 @@ public class AquariumTest {
 
 	@Test
 	public void testAquariumIsGFX() {
-		Aquarium app = new Aquarium();
-		assert(app instanceof GFX);
+		if (!GraphicsEnvironment.isHeadless()) {
+			Aquarium app = new Aquarium();
+			assert(app instanceof GFX);
+		}
 	}
 }
