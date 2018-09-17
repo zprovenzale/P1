@@ -4,11 +4,11 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 
 import me.jjfoley.gfx.GFX;
+import me.jjfoley.gfx.IntPoint;
 
 public class Aquarium extends GFX {
-
-	int fish1X = getWidth() + 100;
-	int fish2X = getWidth() + 300;
+	
+	Submarine ringo = new Submarine(250, 250, Color.yellow);
 
 	@Override
 	public void draw(Graphics2D g) {
@@ -16,17 +16,13 @@ public class Aquarium extends GFX {
 		g.setColor(Color.blue);
 		g.fillRect(0, 0, getWidth(), getHeight());
 
-		// Draw the fish!
-		Creatures.drawFishFacingLeft(g, Color.yellow, fish1X, 200);
-		// Draw the confused fish!
-		Creatures.drawFishFacingRight(g, Color.green, fish2X, 300);
-
-		// What if we wanted this little fish to swim, too?
-		Creatures.drawSmallFishFacingLeft(g, Color.red, 200, 100);
-
-		// Move the fish!
-		fish1X -= 1;
-		fish2X -= 2;
+		ringo.draw(g);
+		
+		IntPoint maybeClick = this.processClick();
+		if (maybeClick != null) {
+			ringo.destX = maybeClick.x;
+			ringo.destY = maybeClick.y;
+		}
 	}
 
 	public static void main(String[] args) {

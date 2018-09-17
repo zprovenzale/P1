@@ -1,4 +1,4 @@
-# CSC212Assignments
+# CSC212Assignments [![Build Status](https://travis-ci.org/jjfiv/CSC212Assignments.svg?branch=master)](https://travis-ci.org/jjfiv/CSC212Assignments)
 Smith College / CSC212 / Assignment Starter Code
 
 The [CSC212Examples](https://github.com/jjfiv/CSC212Examples) repository has all my examples from class. This has the bare-bones minimum you need to start an assignment.
