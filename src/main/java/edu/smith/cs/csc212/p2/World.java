@@ -8,10 +8,27 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import me.jjfoley.gfx.IntPoint;
 
+/**
+ * A World is a 2d grid, represented as a width, a height, and a list of WorldObjects in that world.
+ * @author jfoley
+ *
+ */
 public class World {
+	/**
+	 * The size of the grid (x-tiles).
+	 */
 	private int width;
+	/**
+	 * The size of the grid (y-tiles).
+	 */
 	private int height;
+	/**
+	 * A list of objects in the world (Fish, Snail, Rock, etc.).
+	 */
 	private List<WorldObject> items;
+	/**
+	 * A reference to a random object, so we can randomize placement of objects in this world.
+	 */
 	private Random rand = ThreadLocalRandom.current();
 
 	/**
@@ -33,14 +50,16 @@ public class World {
 	 */
 	public List<WorldObject> find(int x, int y) {
 		List<WorldObject> found = new ArrayList<>();
-		// Lab/Video?: loop through items and find WorldObjects where (x,y) are the same.
 		
+		// Check out every object in the world to find the ones at a particular point.
 		for (WorldObject w : this.items) {
+			// But only the ones that match are "found".
 			if (x == w.getX() && y == w.getY()) {
 				found.add(w);
 			}
 		}
 		
+		// Give back the list, even if empty.
 		return found;
 	}
 	
@@ -52,6 +71,8 @@ public class World {
 	public List<WorldObject> viewItems() {
 		// Don't let anybody add to this list!
 		// Make them use "register" and "remove".
+
+		// This is kind of an advanced-Java trick to return a list where add/remove crash instead of working.
 		return Collections.unmodifiableList(items);
 	}
 
@@ -60,6 +81,7 @@ public class World {
 	 * @param item - the Fish, Rock, Snail, or other WorldObject.
 	 */
 	public void register(WorldObject item) {
+		// Print out what we've added, for our sanity.
 		System.out.println("register: "+item.getClass().getSimpleName());
 		items.add(item);
 	}
@@ -69,6 +91,7 @@ public class World {
 	 * @param item - the item to remove.
 	 */
 	public void remove(WorldObject item) {
+		// Print out what we've removed, for our sanity.
 		System.out.println("remove: "+item.getClass().getSimpleName());
 		items.remove(item);
 	}
@@ -104,7 +127,7 @@ public class World {
 		}
 		// If we get here, we tried a lot of times and couldn't find a random point.
 		// Let's crash our Java program!
-		throw new IllegalStateException("Tried to pickUnusedSpace "+tries+" times and it failed!");
+		throw new IllegalStateException("Tried to pickUnusedSpace "+tries+" times and it failed! Maybe your grid is too small!");
 	}
 	
 	/**

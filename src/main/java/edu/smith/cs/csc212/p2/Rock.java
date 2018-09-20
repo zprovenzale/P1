@@ -6,6 +6,7 @@ import java.awt.geom.RoundRectangle2D;
 
 /**
  * It would be awful nice to have multi-colored rocks at random.
+ * This is not the Rock, but a Rock.
  * @author jfoley
  */
 public class Rock extends WorldObject {
@@ -28,12 +29,19 @@ public class Rock extends WorldObject {
 	
 	// TODO(lab): introduce a member here that indexes the ROCK_COLORS array.
 	
+	/**
+	 * Construct a Rock in our world.
+	 * @param world - the grid world.
+	 */
 	public Rock(World world) {
 		super(world);
 		// TODO(lab): initialize your rock color index to a random number!
 		// Note that all WorldObjects have a ``rand`` available so you don't need to make one.
 	}
 
+	/**
+	 * Draw a rock!
+	 */
 	@Override
 	public void draw(Graphics2D g) {
 		// TODO(lab): use the right color in here...

@@ -6,20 +6,44 @@ import java.awt.Shape;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Rectangle2D;
 
+/**
+ * A Snail moves left to right and bumps into things!
+ * @author jfoley
+ */
 public class Snail extends WorldObject {
 	
+	/**
+	 * This is the color of the Snail's body.
+	 */
 	public Color bodyColor = Color.magenta;
+	/**
+	 * This is the color of the snail shell.
+	 */
 	public Color shellColor = Color.white;
+	/**
+	 * This is pupil of the snail color.
+	 */
 	public Color eyeColor = Color.black;
+	/**
+	 * Does the snail have its eyes open?
+	 */
 	public boolean eyesOpen = false;
+	/**
+	 * Is the snail going to the left?
+	 */
 	public boolean movingLeft = false;
 	
+	/**
+	 * Create a new Snail in a part of this world.
+	 * @param world - the world where the snail moves/lives.
+	 */
 	public Snail(World world) {
 		super(world);
 	}
 
 	/**
 	 * Polishing up my Snail draw method...
+	 * This is kind of a mess, but that's graphics for you.
 	 */
 	@Override
 	public void draw(Graphics2D input) {
