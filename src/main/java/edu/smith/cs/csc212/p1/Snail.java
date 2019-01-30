@@ -44,30 +44,44 @@ public class Snail {
 	public void setSide(String s) {
 		this.side = s.toLowerCase();
 	}
+	
+	/**
+	 * TODO: move the snail about.
+	 */
+	public void move() {
+		
+	}
 		
 	/**
 	 * Draw the snail at the current setup.
 	 * @param g - the window to draw to.
 	 */
 	public void draw(Graphics2D g) {
+		// By calling move here, if we want to move our snail, we can do so.
+		// Move gets called by draw, so whenever draw gets called.
+		this.move();
+		
 		// By making a new Graphics2D object, we can move everything that gets drawn to it.
+		// This is kind of tricky to wrap your head around, so I gave it to you.
 		Graphics2D position = (Graphics2D) g.create();
 		position.translate(x, y);
 		
+		// Note that I need to compare strings with ".equals" this is a Java weirdness.
 		if ("bottom".equals(this.side)) {
 			drawSnail(position, Color.red, Color.white, Color.black);
 		} else if ("top".equals(this.side)) {
 			position.scale(-1, -1);
 			drawSnail(position, Color.red, Color.white, Color.black);
 		} else if ("left".equals(this.side)) { 
-			// Oh, cool, we can use degrees if we want:
-			position.rotate(Math.toRadians(90));
+			// Oh no, radians.
+			position.rotate(Math.PI/2);
 			drawSnail(position, Color.red, Color.white, Color.black);
 		} else { // we don't have to say "right" here.
 			// Oh no, radians.
 			position.rotate(-Math.PI/2);
 			drawSnail(position, Color.red, Color.white, Color.black);
 		}
+		
 		// It's OK if you forget this, Java will eventually notice, but better to have it!
 		position.dispose();
 	}
