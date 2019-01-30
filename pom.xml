@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>edu.smith.cs.csc212</groupId>
-  <artifactId>AssignmentsRepo</artifactId>
+  <artifactId>CSC212P1</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <properties>
@@ -32,7 +32,7 @@
     <dependency>
       <groupId>com.github.jjfiv</groupId>
       <artifactId>GFX</artifactId>
-      <version>1.3</version>
+      <version>1.5.3</version>
     </dependency>
 
   </dependencies>
