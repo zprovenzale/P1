@@ -68,6 +68,9 @@ I expect you to develop and improve on a Fish class. I don't expect you to be ab
 - boolean isLittle
 
 ### Fish destination system (=16)
+
+Consult the Submarine video on Moodle if stuck. The "Submarine Destination System" picks new points based on a user click, but is otherwise extremely similar.
+
 - (2) A fish has a destination. 
 - (4) It moves at a fixed speed toward that destination. There are many solutions to this problem. For the easiest, implement the GuessingGame if-statements for x and y. For the most difficult, you will need knowledge of Algebra/Trigonometry and you must use "double" values for position and speeds.
 - (4) Your fish should face its destination. Set a member variable in your movement code. Do not duplicate your movement code.
@@ -83,7 +86,7 @@ You may complete any subset of tasks for these options, so long as you fully com
 
 ### Option 1: Bubble Class and Bubble Array (=15)
 
-This is one of the easier tasks, so it's worth slightly less.
+Consult the Waves video on Moodle if stuck. The Waves move horizontally rather than vertically but are otherwise extremely similar. This is one of the easier tasks, so it's worth slightly less.
 
 - (3) You have a functioning Bubble object that drifts upward.
 - (3) Your bubble reappears at the bottom of the tank after a delay.
@@ -105,7 +108,7 @@ You can leave your fish from lab alone for now, and either create a subclass of 
 
 Algorithm is a snail that loves to eat algae. 
 
-- (4) They sleep most of the time, and over time the tank gets greener. Hint: Just "animate" the green component of the ocean color.
+- (4) They sleep most of the time, and over time the tank gets greener. Hint: Just "animate" the green component of the ocean color. There is a constructor for Java's Color class that takes three parameters: ``(int r, int g, int b)``
 - (4) They walk around the outside of the tank, upside-down if need be, since they stick to anything.
 - (4) When it reaches a certain level, Algorithm wakes up, and starts eating the algae. Make their eyes open/close? (requires reading graphics code).
 - (4) The water in the tank becomes more blue again.
