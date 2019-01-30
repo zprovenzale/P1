@@ -6,19 +6,19 @@ import java.awt.Shape;
 import java.awt.geom.Ellipse2D;
 
 /**
- * This class is based on a class in CSC212Examples.
+ * This class is used statically (i.e., as a library) to draw fish in various positions and sizes.
  * 
  * @author jfoley
  *
  */
-public class Creatures {
+public class DrawFish {
 	/**
 	 * This code based on the Python fish in CSC111 labs, e.g.,
 	 * https://jcrouser.github.io/CSC111/labs/lab-10-animation.html
 	 * 
 	 * @author jfoley
 	 */
-	public static void drawFishFacingLeft(Graphics2D g, Color color, int x, int y) {
+	public static void facingLeft(Graphics2D g, Color color, int x, int y) {
 		// Draw the fish.
 		g.setColor(color);
 
@@ -54,11 +54,11 @@ public class Creatures {
 	 * @param x the x-coordinate of the position to draw the fish.
 	 * @param y the y-coordinate of the position to draw the fish.
 	 */
-	public static void drawFishFacingRight(Graphics2D g, Color color, int x, int y) {
+	public static void facingRight(Graphics2D g, Color color, int x, int y) {
 		Graphics2D flipped = (Graphics2D) g.create();
 		flipped.translate(x, y);
 		flipped.scale(-1, 1);
-		drawFishFacingLeft(flipped, color, 0, 0);
+		facingLeft(flipped, color, 0, 0);
 		flipped.dispose();
 	}
 
@@ -71,11 +71,11 @@ public class Creatures {
 	 * @param x the x-coordinate of the position to draw the fish.
 	 * @param y the y-coordinate of the position to draw the fish.
 	 */
-	public static void drawSmallFishFacingLeft(Graphics2D g, Color color, int x, int y) {
+	public static void smallFacingLeft(Graphics2D g, Color color, int x, int y) {
 		Graphics2D halfSize = (Graphics2D) g.create();
 		halfSize.translate(x, y);
 		halfSize.scale(0.5, 0.5);
-		drawFishFacingLeft(halfSize, color, 0, 0);
+		facingLeft(halfSize, color, 0, 0);
 		halfSize.dispose();
 	}
 	
@@ -88,11 +88,11 @@ public class Creatures {
 	 * @param x the x-coordinate of the position to draw the fish.
 	 * @param y the y-coordinate of the position to draw the fish.
 	 */
-	public static void drawSmallFishFacingRight(Graphics2D g, Color color, int x, int y) {
+	public static void smallFacingRight(Graphics2D g, Color color, int x, int y) {
 		Graphics2D halfSize = (Graphics2D) g.create();
 		halfSize.translate(x, y);
 		halfSize.scale(-0.5, 0.5);
-		drawFishFacingLeft(halfSize, color, 0, 0);
+		facingLeft(halfSize, color, 0, 0);
 		halfSize.dispose();
 	}
 }
