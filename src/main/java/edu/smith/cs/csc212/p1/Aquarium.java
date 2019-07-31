@@ -26,12 +26,12 @@ public class Aquarium extends GFX {
 	 * This is a static variable that tells us how tall the aquarium is.
 	 */
 	public static int HEIGHT = 500;
-	
+
 	/**
 	 * Put a snail on the top of the tank.
 	 */
-	Snail algorithm = new Snail(177, Snail.HEIGHT+1, "top");
-	
+	Snail algorithm = new Snail(177, Snail.HEIGHT + 1, "top");
+
 	/**
 	 * This is a constructor, code that runs when we make a new Aquarium.
 	 */
@@ -57,7 +57,7 @@ public class Aquarium extends GFX {
 
 		// What if we wanted this little fish to swim, too?
 		DrawFish.smallFacingLeft(g, Color.red, 200, 100);
-		
+
 		// Draw our snail!
 		algorithm.draw(g);
 

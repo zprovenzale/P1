@@ -5,7 +5,9 @@ import java.io.File;
 public class SaveAquariumGIF {
 
 	/**
-	 * This class exists to teach you that you can have main methods in different places!
+	 * This class exists to teach you that you can have main methods in different
+	 * places!
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {

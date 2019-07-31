@@ -6,7 +6,8 @@ import java.awt.Shape;
 import java.awt.geom.Ellipse2D;
 
 /**
- * This class is used statically (i.e., as a library) to draw fish in various positions and sizes.
+ * This class is used statically (i.e., as a library) to draw fish in various
+ * positions and sizes.
  * 
  * @author jfoley
  *
@@ -44,15 +45,15 @@ public class DrawFish {
 		g.setColor(Color.black);
 		g.draw(tail);
 	}
-	
+
 	/**
 	 * This method is implemented by creating a new Graphics "world" located at x,y
 	 * that is scaled in a "backwards" X world.
 	 * 
-	 * @param g the original graphics world.
+	 * @param g     the original graphics world.
 	 * @param color the color of the fish!
-	 * @param x the x-coordinate of the position to draw the fish.
-	 * @param y the y-coordinate of the position to draw the fish.
+	 * @param x     the x-coordinate of the position to draw the fish.
+	 * @param y     the y-coordinate of the position to draw the fish.
 	 */
 	public static void facingRight(Graphics2D g, Color color, int x, int y) {
 		Graphics2D flipped = (Graphics2D) g.create();
@@ -66,10 +67,10 @@ public class DrawFish {
 	 * This method is implemented by creating a new Graphics "world" located at x,y
 	 * that is half the size of a regular one and calling our regular Fish method.
 	 * 
-	 * @param g the original graphics world.
+	 * @param g     the original graphics world.
 	 * @param color the color of the fish!
-	 * @param x the x-coordinate of the position to draw the fish.
-	 * @param y the y-coordinate of the position to draw the fish.
+	 * @param x     the x-coordinate of the position to draw the fish.
+	 * @param y     the y-coordinate of the position to draw the fish.
 	 */
 	public static void smallFacingLeft(Graphics2D g, Color color, int x, int y) {
 		Graphics2D halfSize = (Graphics2D) g.create();
@@ -78,15 +79,15 @@ public class DrawFish {
 		facingLeft(halfSize, color, 0, 0);
 		halfSize.dispose();
 	}
-	
+
 	/**
 	 * This method is implemented by creating a new Graphics "world" located at x,y
 	 * that is half the size of a regular one and calling our regular Fish method.
 	 * 
-	 * @param g the original graphics world.
+	 * @param g     the original graphics world.
 	 * @param color the color of the fish!
-	 * @param x the x-coordinate of the position to draw the fish.
-	 * @param y the y-coordinate of the position to draw the fish.
+	 * @param x     the x-coordinate of the position to draw the fish.
+	 * @param y     the y-coordinate of the position to draw the fish.
 	 */
 	public static void smallFacingRight(Graphics2D g, Color color, int x, int y) {
 		Graphics2D halfSize = (Graphics2D) g.create();
