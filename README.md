@@ -19,11 +19,11 @@ There are a lot of steps here! Don't try to memorize them. Whenever you click ne
 13. Click "Finish"
 14. Right-Click on the new project that showed up in the "Package Explorer" on the left. Select "Configure > Convert to Maven Project".
 
-# Assignment P1: Aquarium Grading Rubric
+# Aquarium Assignment Grading Rubric
 
 ***Due Date***: February 7, 2019.
 
-Remember that we will have P2 opening on that day, so don't save it until the last minute!
+Remember that we will have a new assignment opening on that day, so don't save it until the last minute!
 
 - This assignment is composed of a total of ***64 mandatory points*** and ***79 optional points***. That's too many points in total.
 - The assignment ***will be graded out of 100***. 

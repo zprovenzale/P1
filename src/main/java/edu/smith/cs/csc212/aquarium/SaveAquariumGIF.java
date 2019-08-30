@@ -1,4 +1,4 @@
-package edu.smith.cs.csc212.p1;
+package edu.smith.cs.csc212.aquarium;
 
 import java.io.File;
 
@@ -6,7 +6,7 @@ public class SaveAquariumGIF {
 
 	/**
 	 * This class exists to teach you that you can have main methods in different
-	 * places!
+	 * places! Also, you can use it to save your animation!
 	 * 
 	 * @param args
 	 */

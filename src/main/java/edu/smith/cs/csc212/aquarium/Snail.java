@@ -1,4 +1,4 @@
-package edu.smith.cs.csc212.p1;
+package edu.smith.cs.csc212.aquarium;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
