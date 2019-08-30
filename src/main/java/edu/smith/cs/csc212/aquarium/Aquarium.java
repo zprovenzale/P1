@@ -67,6 +67,10 @@ public class Aquarium extends GFX {
 	}
 
 	public static void main(String[] args) {
+		// Uncomment this to make it go slower!
+		// GFX.FPS = 10;
+		// This is potentially helpful for debugging movement if there are too many print statements!
+
 		// Note that we can store an Aquarium in a variable of type GFX because Aquarium
 		// is a very specific GFX, much like 7 can be stored in a variable of type int!
 		GFX app = new Aquarium();
