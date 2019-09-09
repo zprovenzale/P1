@@ -1,42 +1,43 @@
 Smith College / CSC212 / Aquarium Starter Code
 
+## Step 1: Make a Github Account and Fork this Project!
+
 ## How to import this project into Eclipse
 
 There are a lot of steps here! Don't try to memorize them. Whenever you click next, or open a menu, see if you can read it, guess what you should do next, and confirm with these steps. Doing it this way will help you get through it quicker for future assignments.
 
 1. Go to the "File" menu and choose "Import"
-2. Expand the Git Folder and choose "Projects from Git"
+2. Expand the Git Folder and choose "Projects from Git (with smart import)"
 3. Click "Next"
 4. Choose "Clone URI"
-5. Copy and paste [https://github.com/jjfiv/CSC212Aquarium.git](https://github.com/jjfiv/CSC212Aquarium.git) into the URI field.
+5. Copy and paste the URL of ***YOUR FORK OF THIS PROJECT*** into the URI field.
 6. Click "Next"
 7. Wait for it to find "master"
 8. Click "Next"
 9. (optional) Choose a directory to store the project.
 10. Click "Next"
-11. Choose "Import as general project"
-12. Click "Next"
-13. Click "Finish"
-14. Right-Click on the new project that showed up in the "Package Explorer" on the left. Select "Configure > Convert to Maven Project".
+11. Click "Finish"
 
 # Aquarium Assignment Grading Rubric
 
-***Due Date***: February 7, 2019.
+***Due Date***: September 20, 2019.
 
 Remember that we will have a new assignment opening on that day, so don't save it until the last minute!
 
-- This assignment is composed of a total of ***64 mandatory points*** and ***79 optional points***. That's too many points in total.
+- This assignment is composed of a total of ***66 mandatory points*** and ***79 optional points***. That's too many points in total.
 - The assignment ***will be graded out of 100***. 
 - This means that the best you can acquire is much higher than 100, but it will ***not be used***. Someone who submits only 100 points and completes their functionality perfectly will have an equivalent grade to someone who does everything, so use your time wisely.
 - Therefore, it probably makes sense to do a little extra, but not every single task.
 
-## Mandatory Goals (sums to 64):
+## Mandatory Goals (sums to 66):
+
+You will make great progress on the programming portions of these in lab.
 
 ### Rubric and Reflection (=15)
 
-You must include a PDF file in your submission that identifies the grade you expect on this assignment based on what you completed. 
+You must fill in [this Google Form](https://forms.gle/PvC3hpVDGA5UXnRW6) in addition to submitting your code to Moodle. You will be able to edit your submissions to this form (since it records your email), so feel free to update it as your work. It will have the same rubric as this page, but with hints and discussion removed.
 
-In addition, you will write 10 statements of either:
+In addition the form will ask you to write 10 statements of either:
  - Accomplishments: things that you understand much better now.
  - Challenges: things that you are still working on understanding.
 
@@ -55,10 +56,10 @@ This includes that your code should be professional.
 
 This section will expand in detail, importance and value as the semester goes on.
 
-### Little Fish Moves (=5)
+### Little Fish Moves (=5 if no Fish class)
 There's a little red fish in the starter code. Let's help that little fish out! They want to move.
 
-### Fish Class (=15)
+### Fish Class (=20)
 I expect you to develop and improve on a Fish class. I don't expect you to be able to do it without the following variables:
 
 - int x, int y // Every fish should have its own position.
