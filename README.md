@@ -35,7 +35,7 @@ You will make great progress on the programming portions of these in lab.
 
 ### Rubric and Reflection (=15)
 
-You must fill in [this Google Form](https://forms.gle/PvC3hpVDGA5UXnRW6) in addition to submitting your code to Moodle. You will be able to edit your submissions to this form (since it records your email), so feel free to update it as your work. It will have the same rubric as this page, but with hints and discussion removed.
+You must fill in [this Google Form](https://forms.gle/6hWeBw8h2qvQNxRX9) in addition to submitting your code to Moodle. You will be able to edit your submissions to this form (since it records your email), so feel free to update it as your work. It will have the same rubric as this page, but with hints and discussion removed.
 
 In addition the form will ask you to write 10 statements of either:
  - Accomplishments: things that you understand much better now.
